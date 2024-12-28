@@ -14,7 +14,7 @@ const CartModal = ({ cartItems, onClose, onRemoveFromCart }) => {
               <li key={item.id}>
                 <img src={item.image} alt={item.title} width="50" />
                 <p>{item.title}</p>
-                <p>${item.price}</p>
+                <p>₹{item.price}</p>
                 <button onClick={() => onRemoveFromCart(item.id)}>Remove from Cart</button>
               </li>
             ))}
